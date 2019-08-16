@@ -4,6 +4,12 @@
 
   .intro {
 
+    #headerImg {
+        display: inline-block;
+        margin: auto;
+        width: 100%;
+    }
+
     h2 {
       padding: 15px;
     }
@@ -24,6 +30,20 @@
       margin: 20px 2.5%;
       border-radius: 20px;
       height: 100%;
+    }
+
+    @media @phone {
+      .blast {
+        width: 100%;
+        height: auto;
+      }
+      .sky {
+        display: none;
+      }
+
+      .launch {
+        display: none;
+      }
     }
   }
 
@@ -58,6 +78,18 @@
       }
 
       .btn {
+        .button(30%, 12%);//width, height
+        @media @phone {
+          .button(100%, 12%);//width, height
+        }
+      }
+
+      .btn:hover {
+        .button(30%, 12%, white, @btn-bg-color);//width, height, background, text
+        border: .5px solid lightgray;
+        @media @phone {
+          .button(100%, 12%, white, @btn-bg-color);//width, height, background, text
+        }
       }
     }
 
@@ -69,6 +101,21 @@
         width: 100%;
         height: auto;
         border-radius: 10px;
+      }
+    }
+
+    @media @phone {
+      flex-direction: column-reverse;
+      padding: 10px 12px;
+
+      .walk-text {
+        margin: 0;
+        width: 100%;
+      }
+      .walk-img {
+        margin: 0;
+        width: 100%;
+        height: auto;
       }
     }
   }
