@@ -208,6 +208,8 @@ footer p {
   font-weight: bold;
   font-size: 1.6rem;
   color: darkslategray;
+  white-space: nowrap;
+  overflow: hidden;
 }
 @import "footer.less";
 .home .intro #headerImg {
@@ -379,6 +381,7 @@ footer p {
   }
   .home .walk .walk-text {
     margin: 0;
+    margin-top: 10%;
     width: 100%;
   }
   .home .walk .walk-img {
