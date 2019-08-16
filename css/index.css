@@ -298,22 +298,43 @@ footer p {
   }
 }
 .home .walk .walk-text .btn:hover {
-  width: 30%;
-  height: 12%;
-  background: white;
-  color: #22283A;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 1.8rem;
-  padding: 15px;
-  border-radius: 4px;
-  font-weight: bold;
-  border: 0.5px solid lightgray;
+  animation-name: btnHover;
+  animation-duration: 0.3s;
+  animation-fill-mode: forwards;
 }
-@media screen and (max-width: 500px) {
-  .home .walk .walk-text .btn:hover {
-    width: 100%;
+@keyframes btnHover {
+  from {
+    width: 30%;
+    height: 12%;
+    background: #22283a;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.8rem;
+    padding: 15px;
+    border-radius: 4px;
+    font-weight: bold;
+    border: 0.5px solid lightgray;
+  }
+  @media screen and (max-width: 500px) {
+    from {
+      width: 100%;
+      height: 12%;
+      background: #22283a;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 1.8rem;
+      padding: 15px;
+      border-radius: 4px;
+      font-weight: bold;
+      border: 0.5px solid lightgray;
+    }
+  }
+  to {
+    width: 30%;
     height: 12%;
     background: white;
     color: #22283A;
@@ -324,6 +345,22 @@ footer p {
     padding: 15px;
     border-radius: 4px;
     font-weight: bold;
+    border: 0.5px solid lightgray;
+  }
+  @media screen and (max-width: 500px) {
+    to {
+      width: 100%;
+      height: 12%;
+      background: white;
+      color: #22283A;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 1.8rem;
+      padding: 15px;
+      border-radius: 4px;
+      font-weight: bold;
+    }
   }
 }
 .home .walk .walk-img {

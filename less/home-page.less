@@ -85,11 +85,28 @@
       }
 
       .btn:hover {
+        animation-name: btnHover;
+        animation-duration: .3s;
+        animation-fill-mode: forwards;
+      }
+
+      @keyframes btnHover {
+        from {
+          .button(30%, 12%);//width, height
+          border: .5px solid lightgray;
+          @media @phone {
+            .button(100%, 12%);//width, height
+            border: .5px solid lightgray;
+          }
+        }
+        to{
+
         .button(30%, 12%, white, @btn-bg-color);//width, height, background, text
         border: .5px solid lightgray;
         @media @phone {
           .button(100%, 12%, white, @btn-bg-color);//width, height, background, text
         }
+      }
       }
     }
 

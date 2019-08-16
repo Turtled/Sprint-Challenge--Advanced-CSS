@@ -34,13 +34,24 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the difference between an adaptive website and a fully responsive website?
 
+    An adaptive website has a few seperate formats for certain screen sizes, while a responsive website reformats itself to fit any screen size automatically.
+
 2. Describe what it means to be mobile first vs desktop first.
+
+    Mobile first is when you design the layout for mobile first, and then make style variations for desktop
+    Desktop first is when you design the layout for desktop first, and then make style variations for mobile
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
 
+    It means that all font by default is 62.5% font size, and later we can specify sizes based on multiples of that default value with rem. Example: 2rem would be font-size 125%
+
 4. How would you describe preprocessing to someone new to CSS?
 
+    I'd tell them that preprocessers provide us with convenient and useful extra CSS features which speed up development. Then the preprocesser takes that fancy CSS and converts it into regular CSS when we're done with it so the browser can understand it.
+
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+
+    My favorite concept in preprocessing is mixins since they allow us to take repetitive styles and put them in a single place, and then use them with a single line of code when needed. Mixins are also the concept that gives me the most trouble though. I have trouble deciding when it's necessary to use them and when it's not, to make sure I'm not unessessarily overusing them, but also that I'm not writing repetitive styles. 
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
@@ -128,7 +139,7 @@ After finishing your required elements, you can push your work further. These go
 
 * [ ] Build a page of your choosing from the navigation items. Come up with content and images that fit the theme.
 
-* [ ] Introduce CSS animations to your site.
+* [ + ] Introduce CSS animations to your site.
 
 * [ ] Create a fixed navigation and add some opacity to the background
 
